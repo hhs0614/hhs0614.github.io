@@ -277,6 +277,88 @@
       gap: 1rem;
     }
 
+    /* ── Resume ── */
+    .resume-block {
+      margin-bottom: 2.5rem;
+    }
+
+    .resume-block h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-light);
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .resume-item {
+      display: flex;
+      gap: 1.2rem;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .resume-item:last-child { border-bottom: none; }
+
+    .resume-date {
+      flex-shrink: 0;
+      width: 110px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      padding-top: 0.15rem;
+    }
+
+    .resume-content strong {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .resume-content span {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* ── Courses ── */
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .course-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.1rem 1.3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .course-card .course-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .course-card .course-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.15rem 0.55rem;
+      border-radius: 99px;
+      margin-top: 0.3rem;
+    }
+
+    .badge-plan   { background: rgba(108,99,255,0.15); color: var(--accent-light); }
+    .badge-taking { background: rgba(72,199,142,0.15); color: #48c78e; }
+
     /* ── Footer ── */
     footer {
       text-align: center;
@@ -325,8 +407,10 @@
       <a href="#hero" class="nav-logo">hhs0614</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#courses">Courses</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -369,6 +453,59 @@
       다양한 팀 프로젝트와 개인 프로젝트를 통해 문제 해결 능력을 키워왔으며,
       꾸준히 성장하는 개발자가 되는 것을 목표로 하고 있습니다.
     </p>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Resume -->
+  <section id="resume" aria-labelledby="resume-heading">
+    <p class="section-label">My background</p>
+    <h2 id="resume-heading">Resume</h2>
+
+    <div class="resume-block">
+      <h3>Education</h3>
+      <div class="resume-item">
+        <div class="resume-date">2023 — 현재</div>
+        <div class="resume-content">
+          <strong>컴퓨터공학부</strong>
+          <span>재학 중</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-block">
+      <h3>Experience</h3>
+      <div class="resume-item">
+        <div class="resume-date">2024</div>
+        <div class="resume-content">
+          <strong>교내 알고리즘 학회</strong>
+          <span>스터디 활동 · 주간 PS 세션 참여 및 풀이 공유</span>
+        </div>
+      </div>
+      <div class="resume-item">
+        <div class="resume-date">2024</div>
+        <div class="resume-content">
+          <strong>교내 프로그래밍 경진대회 참가</strong>
+          <span>알고리즘 문제 풀이 대회 참가</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-block">
+      <h3>Skills</h3>
+      <div class="resume-item">
+        <div class="resume-date">Languages</div>
+        <div class="resume-content">
+          <span>Python · C++ · JavaScript · HTML/CSS</span>
+        </div>
+      </div>
+      <div class="resume-item">
+        <div class="resume-date">Tools</div>
+        <div class="resume-content">
+          <span>Git · GitHub · VS Code · MySQL</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <hr class="divider" />
@@ -481,6 +618,53 @@
           <a href="https://github.com/hhs0614" target="_blank" rel="noopener">GitHub →</a>
         </div>
       </article>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Courses -->
+  <section id="courses" aria-labelledby="courses-heading">
+    <p class="section-label">What I'm studying</p>
+    <h2 id="courses-heading">Courses</h2>
+    <div class="courses-grid">
+
+      <div class="course-card">
+        <span class="course-name">자료구조</span>
+        <span class="course-meta">컴퓨터공학부 전공필수</span>
+        <span class="badge badge-taking">수강 중</span>
+      </div>
+
+      <div class="course-card">
+        <span class="course-name">운영체제</span>
+        <span class="course-meta">컴퓨터공학부 전공필수</span>
+        <span class="badge badge-plan">수강 예정</span>
+      </div>
+
+      <div class="course-card">
+        <span class="course-name">컴퓨터 네트워크</span>
+        <span class="course-meta">컴퓨터공학부 전공선택</span>
+        <span class="badge badge-plan">수강 예정</span>
+      </div>
+
+      <div class="course-card">
+        <span class="course-name">알고리즘</span>
+        <span class="course-meta">컴퓨터공학부 전공필수</span>
+        <span class="badge badge-plan">수강 예정</span>
+      </div>
+
+      <div class="course-card">
+        <span class="course-name">소프트웨어공학</span>
+        <span class="course-meta">컴퓨터공학부 전공선택</span>
+        <span class="badge badge-plan">수강 예정</span>
+      </div>
+
+      <div class="course-card">
+        <span class="course-name">머신러닝 입문</span>
+        <span class="course-meta">컴퓨터공학부 전공선택</span>
+        <span class="badge badge-plan">수강 예정</span>
+      </div>
 
     </div>
   </section>
