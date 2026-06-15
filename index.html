@@ -359,6 +359,49 @@
     .badge-plan   { background: rgba(108,99,255,0.15); color: var(--accent-light); }
     .badge-taking { background: rgba(72,199,142,0.15); color: #48c78e; }
 
+    /* ── AI Usage ── */
+    .ai-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      max-width: 700px;
+    }
+
+    .ai-card .ai-row {
+      display: flex;
+      gap: 1rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+
+    .ai-card .ai-row:last-child { border-bottom: none; }
+
+    .ai-label {
+      flex-shrink: 0;
+      width: 80px;
+      font-weight: 600;
+      color: var(--accent-light);
+      font-size: 0.85rem;
+    }
+
+    .ai-value { color: var(--text-muted); }
+
+    .ai-value code {
+      display: block;
+      margin-top: 0.5rem;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.8rem 1rem;
+      font-family: "Fira Code", "Consolas", monospace;
+      font-size: 0.82rem;
+      line-height: 1.6;
+      color: var(--text);
+      white-space: pre-wrap;
+    }
+
     /* ── Footer ── */
     footer {
       text-align: center;
@@ -412,6 +455,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#courses">Courses</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#ai-usage">AI Usage</a></li>
       </ul>
     </div>
   </nav>
@@ -681,6 +725,35 @@
     <div class="contact-links">
       <a href="mailto:bitnayo0001@gmail.com" class="btn btn-primary">bitnayo0001@gmail.com</a>
       <a href="https://github.com/hhs0614" class="btn btn-outline" target="_blank" rel="noopener">github.com/hhs0614</a>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- AI Usage -->
+  <section id="ai-usage" aria-labelledby="ai-heading">
+    <p class="section-label">Transparency</p>
+    <h2 id="ai-heading">AI Usage</h2>
+    <div class="ai-card">
+      <div class="ai-row">
+        <span class="ai-label">Tool</span>
+        <span class="ai-value">Claude Code (Anthropic) — claude-sonnet-4-6</span>
+      </div>
+      <div class="ai-row">
+        <span class="ai-label">Purpose</span>
+        <span class="ai-value">이 웹사이트의 HTML/CSS 작성 및 GitHub Pages 배포 자동화에 활용했습니다.</span>
+      </div>
+      <div class="ai-row">
+        <span class="ai-label">Prompt</span>
+        <div class="ai-value">
+          <code>Build a static personal website in the repo root.
+Use assets/profile.jpg or assets/profile.png as the profile image if available.
+Link assets/cv.pdf from the CV or Resume section if available.
+Keep the site simple and compatible with GitHub Pages.
+Do not use a backend or paid external API.
+Make the page responsive and accessible.</code>
+        </div>
+      </div>
     </div>
   </section>
 
