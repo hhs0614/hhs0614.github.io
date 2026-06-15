@@ -1,0 +1,45 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842]
+  /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >> endobj
+4 0 obj << /Length 620 >>
+stream
+BT
+/F1 20 Tf
+50 800 Td (Curriculum Vitae) Tj
+/F1 12 Tf
+0 -40 Td (Name: Heo Hyunseo) Tj
+0 -20 Td (Major: Computer Science and Engineering) Tj
+0 -20 Td (Email: bitnayo0001@gmail.com) Tj
+0 -20 Td (GitHub: github.com/hhs0614) Tj
+/F1 14 Tf
+0 -40 Td (Education) Tj
+/F1 11 Tf
+0 -20 Td (2023 - Present  B.S. in Computer Science and Engineering) Tj
+/F1 14 Tf
+0 -40 Td (Skills) Tj
+/F1 11 Tf
+0 -20 Td (Languages: Python, C++, JavaScript, HTML/CSS) Tj
+0 -20 Td (Tools: Git, GitHub, VS Code, MySQL) Tj
+/F1 14 Tf
+0 -40 Td (Experience) Tj
+/F1 11 Tf
+0 -20 Td (2024  Algorithm Study Club) Tj
+0 -20 Td (2024  Campus Programming Contest Participant) Tj
+ET
+endstream
+endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000266 00000 n 
+0000000938 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1022
+%%EOF
